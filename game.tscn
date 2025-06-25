@@ -211,12 +211,13 @@ z_as_relative = false
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAADAAMAAQAAAAAAAAAMAAMAAQAAAAAAAAAVAAMAAQAAAAAAAAAMAAkAAQAAAAAAAAAVAAkAAQAAAAAAAAADAAkAAQAAAAAAAAA=")
 tile_set = SubResource("TileSet_vef74")
+y_sort_origin = -10
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D"]
 visibility_layer = 3
 y_sort_enabled = true
 texture_filter = 3
-position = Vector2(809, 573)
+position = Vector2(801, 638)
 scale = Vector2(0.65, 0.65)
 collision_mask = 2
 script = ExtResource("5_ryrav")
