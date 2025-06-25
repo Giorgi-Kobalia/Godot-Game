@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://cmqumd6hwynjc"]
 
 [ext_resource type="Texture2D" uid="uid://dfam2nq4r7002" path="res://assets/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png" id="1_80nbo"]
-[ext_resource type="PackedScene" uid="uid://xspqw5vv75if" path="res://ground.tscn" id="1_fc0e3"]
+[ext_resource type="PackedScene" path="res://ground.tscn" id="1_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://blrhm7ookvhvn" path="res://assets/Deco/09.png" id="5_eow3j"]
 [ext_resource type="Script" uid="uid://brfbsgk2w1t1h" path="res://character_body_movements.gd" id="5_ryrav"]
 
@@ -9,7 +9,7 @@
 texture = ExtResource("5_eow3j")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.96, 16.64, -10.24, 15.36, -10.24, 14.08, -8.96, 12.8, 12.8, 12.8, 14.08, 14.08, 14.08, 15.36, 12.8, 16.64)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.96, 16.64, -10.24, 14.08, -10.24, 15.36, -8.96, 16.64, 12.8, 16.64, 14.08, 15.36, 14.08, 14.08, 12.8, 12.8)
 
 [sub_resource type="TileSet" id="TileSet_vef74"]
 tile_size = Vector2i(64, 64)
