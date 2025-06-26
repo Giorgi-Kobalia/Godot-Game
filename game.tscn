@@ -22,6 +22,7 @@ texture_region_size = Vector2i(128, 128)
 0:0/animation_frame_7/duration = 0.1
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-19.2, 2.56, -20.48, 3.84, -20.48, 6.4, -19.2, 7.68, 19.2, 7.68, 20.48, 6.4, 20.48, 3.84, 19.2, 2.56)
+0:0/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_vef74"]
 tile_size = Vector2i(64, 64)
@@ -225,6 +226,10 @@ script = ExtResource("5_ryrav")
 [node name="Camera2D" type="Camera2D" parent="Node2D/CharacterBody2D"]
 offset = Vector2(0, 40)
 zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_right = 1600
+limit_bottom = 900
 limit_smoothed = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
