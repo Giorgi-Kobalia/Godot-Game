@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=4 uid="uid://xspqw5vv75if"]
 
-[ext_resource type="Texture2D" uid="uid://clg1ii8brffxp" path="res://assets/Terrain/Water/Water.png" id="1_wnojy"]
-[ext_resource type="Texture2D" uid="uid://c0hre8dt0r2p2" path="res://assets/Terrain/Water/Foam/Foam.png" id="2_vkp31"]
-[ext_resource type="Texture2D" uid="uid://dcelctheo2bsv" path="res://assets/Terrain/Ground/Tilemap_Elevation.png" id="3_d4pc4"]
-[ext_resource type="Texture2D" uid="uid://1bf77ghpueh4" path="res://assets/Terrain/Bridge/Bridge_All.png" id="4_eprha"]
+[ext_resource type="Texture2D" uid="uid://bysqsm77ehylu" path="res://assets/Terrain/Water/Water.png" id="1_wnojy"]
+[ext_resource type="Texture2D" uid="uid://dovtxk00qwk23" path="res://assets/Terrain/Water/Foam/Foam.png" id="2_vkp31"]
+[ext_resource type="Texture2D" uid="uid://drfh462tmhm3e" path="res://assets/Terrain/Ground/Tilemap_Elevation.png" id="3_d4pc4"]
+[ext_resource type="Texture2D" uid="uid://dpsrnbehu2jt1" path="res://assets/Terrain/Bridge/Bridge_All.png" id="4_eprha"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_511ym"]
 texture = ExtResource("1_wnojy")

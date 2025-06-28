@@ -1,10 +1,11 @@
-[gd_scene load_steps=32 format=4 uid="uid://cmqumd6hwynjc"]
+[gd_scene load_steps=45 format=4 uid="uid://cmqumd6hwynjc"]
 
 [ext_resource type="PackedScene" uid="uid://xspqw5vv75if" path="res://ground.tscn" id="1_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://ctjybtayvoqw3" path="res://assets/Deco/bushes_ANIMATED/Bushe1.png" id="2_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://blbax00uhw4im" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Idle.png" id="4_7jktm"]
 [ext_resource type="Texture2D" uid="uid://dxv8gyhq0mium" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Heal.png" id="4_ryrav"]
 [ext_resource type="Texture2D" uid="uid://bvx6ks1yjtxe7" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Run.png" id="5_eow3j"]
+[ext_resource type="Texture2D" uid="uid://dllf8ktako8tg" path="res://assets/Effects/Heal_Effect.png" id="5_j5wjh"]
 [ext_resource type="Script" uid="uid://brfbsgk2w1t1h" path="res://character_body_movements.gd" id="5_ryrav"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
@@ -194,6 +195,91 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1i01"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r62pu"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klri6"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu6ph"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edr7y"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq12w"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t46w6"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m28ev"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwlx3"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(1536, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0de7l"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(1728, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87ddb"]
+atlas = ExtResource("5_j5wjh")
+region = Rect2(1920, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mljfx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1i01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r62pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klri6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eu6ph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edr7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq12w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t46w6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m28ev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwlx3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0de7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87ddb")
+}],
+"loop": false,
+"name": &"Heal_Aura",
+"speed": 12.0
+}]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mwb40"]
 radius = 6.99512
 height = 39.9995
@@ -202,6 +288,7 @@ height = 39.9995
 texture_filter = 3
 
 [node name="ground" parent="." instance=ExtResource("1_fc0e3")]
+position = Vector2(-1, -7)
 
 [node name="Node2D" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -232,11 +319,15 @@ limit_right = 1600
 limit_bottom = 900
 limit_smoothed = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
+[node name="Monk" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
 y_sort_enabled = true
 sprite_frames = SubResource("SpriteFrames_j5wjh")
 animation = &"Heal"
 autoplay = "Idle"
+
+[node name="HealAura" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_mljfx")
+animation = &"Heal_Aura"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/CharacterBody2D"]
 position = Vector2(-1, 25)

@@ -2,17 +2,18 @@ extends CharacterBody2D
 
 const SPEED = 150.0
 
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var monk = $Monk
+@onready var aura_anim = $HealAura
 
 var is_healing: bool = false
 
 func _physics_process(delta: float) -> void:
-	# If healing, stop everything and wait until animation finishes
 	if is_healing:
 		velocity = Vector2.ZERO
 		return
+		
+	aura_anim.visible = false
 
-	# Handle movement input
 	var direction_x := Input.get_axis("ui_left", "ui_right")
 	var direction_y := Input.get_axis("ui_up", "ui_down")
 
@@ -26,15 +27,14 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 
-	# Play animation based on movement
 	if velocity.length() > 0:
-		animated_sprite.play("Run")
+		monk.play("Run")
 	else:
-		animated_sprite.play("Idle")
+		monk.play("Idle")
 
-	# Flip based on direction
 	if velocity.x != 0:
-		animated_sprite.flip_h = velocity.x < 0
+		monk.flip_h = velocity.x < 0
+		aura_anim.flip_h = velocity.x < 0
 
 	move_and_slide()
 
@@ -45,12 +45,15 @@ func _input(event):
 func start_healing():
 	is_healing = true
 	velocity = Vector2.ZERO
-	animated_sprite.play("Heal")
+	monk.play("Heal")
+	aura_anim.visible = true
+	aura_anim.play("Heal_Aura")
 
-	# Connect animation finished signal (only once)
-	if not animated_sprite.animation_finished.is_connected(_on_animation_finished):
-		animated_sprite.animation_finished.connect(_on_animation_finished)
+	# Connect only once
+	if not monk.animation_finished.is_connected(_on_heal_finished):
+		monk.animation_finished.connect(_on_heal_finished)
 
-func _on_animation_finished():
-	if animated_sprite.animation == "Heal":
+func _on_heal_finished():
+	if monk.animation == "Heal":
+		aura_anim.visible = false
 		is_healing = false
