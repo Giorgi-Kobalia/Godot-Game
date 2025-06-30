@@ -271,13 +271,13 @@ texture_filter = 3
 visibility_layer = 3
 y_sort_enabled = true
 texture_filter = 3
-position = Vector2(143, 845)
+position = Vector2(53, 820)
 scale = Vector2(0.65, 0.65)
 collision_mask = 2
 script = ExtResource("5_ryrav")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 limit_left = 0
 limit_top = 0
 limit_right = 3072
