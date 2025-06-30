@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=3072
 window/size/viewport_height=1728
-window/size/mode=1
+window/size/mode=3
 window/stretch/aspect="ignore"
 
 [layer_names]
