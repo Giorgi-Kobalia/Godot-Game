@@ -1,34 +1,11 @@
-[gd_scene load_steps=45 format=4 uid="uid://cmqumd6hwynjc"]
+[gd_scene load_steps=42 format=3 uid="uid://cmqumd6hwynjc"]
 
 [ext_resource type="PackedScene" uid="uid://xspqw5vv75if" path="res://ground.tscn" id="1_fc0e3"]
-[ext_resource type="Texture2D" uid="uid://ctjybtayvoqw3" path="res://assets/Deco/bushes_ANIMATED/Bushe1.png" id="2_fc0e3"]
 [ext_resource type="Texture2D" uid="uid://blbax00uhw4im" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Idle.png" id="4_7jktm"]
 [ext_resource type="Texture2D" uid="uid://dxv8gyhq0mium" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Heal.png" id="4_ryrav"]
 [ext_resource type="Texture2D" uid="uid://bvx6ks1yjtxe7" path="res://assets/Factions/Knights/Troops/Monk/Yellow/Run.png" id="5_eow3j"]
 [ext_resource type="Texture2D" uid="uid://dllf8ktako8tg" path="res://assets/Effects/Heal_Effect.png" id="5_j5wjh"]
 [ext_resource type="Script" uid="uid://brfbsgk2w1t1h" path="res://character_body_movements.gd" id="5_ryrav"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jktm"]
-texture = ExtResource("2_fc0e3")
-texture_region_size = Vector2i(128, 128)
-0:0/animation_columns = 8
-0:0/animation_speed = 0.9
-0:0/animation_frame_0/duration = 0.1
-0:0/animation_frame_1/duration = 0.1
-0:0/animation_frame_2/duration = 0.1
-0:0/animation_frame_3/duration = 0.1
-0:0/animation_frame_4/duration = 0.1
-0:0/animation_frame_5/duration = 0.1
-0:0/animation_frame_6/duration = 0.1
-0:0/animation_frame_7/duration = 0.1
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-19.2, 2.56, -20.48, 3.84, -20.48, 6.4, -19.2, 7.68, 19.2, 7.68, 20.48, 6.4, 20.48, 3.84, 19.2, 2.56)
-0:0/0/physics_layer_0/polygon_0/one_way = true
-
-[sub_resource type="TileSet" id="TileSet_vef74"]
-tile_size = Vector2i(64, 64)
-physics_layer_0/collision_layer = 2
-sources/1 = SubResource("TileSetAtlasSource_7jktm")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eow3j"]
 atlas = ExtResource("4_ryrav")
@@ -285,51 +262,39 @@ radius = 6.99512
 height = 39.9995
 
 [node name="Game" type="Node2D"]
+y_sort_enabled = true
 texture_filter = 3
 
 [node name="ground" parent="." instance=ExtResource("1_fc0e3")]
-position = Vector2(-1, -7)
 
-[node name="Node2D" type="Node2D" parent="."]
-y_sort_enabled = true
-
-[node name="DECO" type="TileMapLayer" parent="Node2D"]
-light_mask = 2
-z_as_relative = false
-y_sort_enabled = true
-tile_map_data = PackedByteArray("AAADAAMAAQAAAAAAAAAMAAMAAQAAAAAAAAAVAAMAAQAAAAAAAAAMAAkAAQAAAAAAAAAVAAkAAQAAAAAAAAADAAkAAQAAAAAAAAA=")
-tile_set = SubResource("TileSet_vef74")
-y_sort_origin = -10
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 visibility_layer = 3
 y_sort_enabled = true
 texture_filter = 3
-position = Vector2(801, 638)
+position = Vector2(143, 845)
 scale = Vector2(0.65, 0.65)
 collision_mask = 2
 script = ExtResource("5_ryrav")
 
-[node name="Camera2D" type="Camera2D" parent="Node2D/CharacterBody2D"]
-offset = Vector2(0, 40)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(3, 3)
 limit_left = 0
 limit_top = 0
-limit_right = 1600
-limit_bottom = 900
+limit_right = 3072
+limit_bottom = 1728
 limit_smoothed = true
 
-[node name="Monk" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
+[node name="Monk" type="AnimatedSprite2D" parent="CharacterBody2D"]
 y_sort_enabled = true
 sprite_frames = SubResource("SpriteFrames_j5wjh")
 animation = &"Heal"
 autoplay = "Idle"
 
-[node name="HealAura" type="AnimatedSprite2D" parent="Node2D/CharacterBody2D"]
+[node name="HealAura" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_mljfx")
 animation = &"Heal_Aura"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-1, 25)
 rotation = 1.57557
 shape = SubResource("CapsuleShape2D_mwb40")
