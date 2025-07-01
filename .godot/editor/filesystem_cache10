@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751306382
-character_body_movements.gd::GDScript::3590046107438350679::1751136792::0::1::::<>CharacterBody2D<><>0<>0<><>::
-game.tscn::PackedScene::5649373510297128488::1751305097::0::1::::<><><>0<>0<><>::uid://xspqw5vv75if::::res://ground.tscn<>uid://blbax00uhw4im::::res://assets/Factions/Knights/Troops/Monk/Yellow/Idle.png<>uid://dxv8gyhq0mium::::res://assets/Factions/Knights/Troops/Monk/Yellow/Heal.png<>uid://bvx6ks1yjtxe7::::res://assets/Factions/Knights/Troops/Monk/Yellow/Run.png<>uid://dllf8ktako8tg::::res://assets/Effects/Heal_Effect.png<>uid://brfbsgk2w1t1h::::res://character_body_movements.gd
-ground.tscn::PackedScene::1652442733683131389::1751305097::0::1::::<><><>0<>0<><>::uid://ds4blq6sqegbl::::res://assets/Terrain/Ground/Tilemap_Flat.png<>uid://drfh462tmhm3e::::res://assets/Terrain/Ground/Tilemap_Elevation.png<>uid://bivx0inospg7k::::res://assets/Factions/Knights/Buildings/House/Yellow/House1.png<>uid://dxybkp2moknx6::::res://assets/Factions/Knights/Buildings/House/OLD/House_Yellow.png<>uid://b3i6kjd6y7gya::::res://assets/Factions/Knights/Buildings/House/Yellow/House3.png<>uid://b5x6xjlhad8ti::::res://assets/Resources/Trees/all_trees.png<>uid://ctjybtayvoqw3::::res://assets/Deco/bushes_ANIMATED/Bushe1.png<>uid://idps4mrhrf50::::res://assets/Deco/bushes_ANIMATED/Bushe2.png<>uid://btyico4o33oyo::::res://assets/Deco/bushes_ANIMATED/Bushe3.png<>uid://cgb2mtai813mg::::res://assets/Deco/bushes_ANIMATED/Bushe4.png
+::res://::1751399763
+character_body_movements.gd::GDScript/GDScript::3590046107438350679::1751136792::0::1::::<>CharacterBody2D<><>0<>0<><>::
+game.tscn::PackedScene::5649373510297128488::1751309114::0::1::::<><><>0<>0<><>::uid://xspqw5vv75if::::res://ground.tscn<>uid://blbax00uhw4im::::res://assets/Factions/Knights/Troops/Monk/Yellow/Idle.png<>uid://dxv8gyhq0mium::::res://assets/Factions/Knights/Troops/Monk/Yellow/Heal.png<>uid://bvx6ks1yjtxe7::::res://assets/Factions/Knights/Troops/Monk/Yellow/Run.png<>uid://dllf8ktako8tg::::res://assets/Effects/Heal_Effect.png<>uid://brfbsgk2w1t1h::::res://character_body_movements.gd<>uid://ct0ivhg4hqfc1::::res://assets/Factions/Knights/Troops/Pawn/Yellow/Pawn_Yellow.png
+ground.tscn::PackedScene::1652442733683131389::1751309016::0::1::::<><><>0<>0<><>::uid://ds4blq6sqegbl::::res://assets/Terrain/Ground/Tilemap_Flat.png<>uid://drfh462tmhm3e::::res://assets/Terrain/Ground/Tilemap_Elevation.png<>uid://bivx0inospg7k::::res://assets/Factions/Knights/Buildings/House/Yellow/House1.png<>uid://dxybkp2moknx6::::res://assets/Factions/Knights/Buildings/House/OLD/House_Yellow.png<>uid://b3i6kjd6y7gya::::res://assets/Factions/Knights/Buildings/House/Yellow/House3.png<>uid://b5x6xjlhad8ti::::res://assets/Resources/Trees/all_trees.png<>uid://ctjybtayvoqw3::::res://assets/Deco/bushes_ANIMATED/Bushe1.png<>uid://dtc2a1mf3ybqj::::res://assets/Factions/Knights/Buildings/Castle/Castle_Construction.png<>uid://idps4mrhrf50::::res://assets/Deco/bushes_ANIMATED/Bushe2.png<>uid://btyico4o33oyo::::res://assets/Deco/bushes_ANIMATED/Bushe3.png<>uid://cgb2mtai813mg::::res://assets/Deco/bushes_ANIMATED/Bushe4.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::5622393298661841732::1750879315::1750880028::1::::<><><>0<>0<>1d30735670abdeb027a13c37c557f43f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile::-1::1750879315::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1750879315::0::1::::<><><>0<>0<><>::
 ::res://assets/::1750885372
 ::res://assets/Deco/::1750885416
 01.png::CompressedTexture2D/CompressedTexture2D::2647794633749667996::1666996368::1750885416::1::::<><><>0<>0<>4a38064aa908d320ed9ed852572f7fdb<>res://.godot/imported/01.png-96b2cbe3cef5bf8a3d401f3a1b144158.ctex::
@@ -313,7 +313,7 @@ Sheep_Move.png::CompressedTexture2D/CompressedTexture2D::6890879747678748228::17
 HappySheep_All.png::CompressedTexture2D/CompressedTexture2D::1335636003523734169::1750885372::1750885415::1::::<><><>0<>0<>2c1f6923c25ff58d63440ae47eb0870e<>res://.godot/imported/HappySheep_All.png-6539df2c2f4888ce7e83370b9245a6f1.ctex::
 HappySheep_Bouncing.png::CompressedTexture2D/CompressedTexture2D::2047210630436618728::1750885372::1750885415::1::::<><><>0<>0<>e6aab89fd23b08cb4f32d04fa3e90c61<>res://.godot/imported/HappySheep_Bouncing.png-2c3ffe145b6352d244b490922b43d17a.ctex::
 HappySheep_Idle.png::CompressedTexture2D/CompressedTexture2D::3481699373003812575::1750885372::1750885415::1::::<><><>0<>0<>dc1d7fa127350d6e4731f3fdb557f6a6<>res://.godot/imported/HappySheep_Idle.png-ca050b7fa56371c7a2c89006fe83cf71.ctex::
-::res://assets/Resources/Trees/::1751305097
+::res://assets/Resources/Trees/::1751306393
 all_trees.png::CompressedTexture2D/CompressedTexture2D::4541490471234224970::1751305097::1751306393::1::::<><><>0<>0<>81168822e30a9fddc2ed3cb36ddd9807<>res://.godot/imported/all_trees.png-8d12529f7a77312428e1f28d391dbfab.ctex::
 Tree1.png::CompressedTexture2D/CompressedTexture2D::2541997366510122577::1750885372::1750885415::1::::<><><>0<>0<>8f87df6fe95101202b01273b47d069a3<>res://.godot/imported/Tree1.png-7a63d27196f7f875da2045e52cf5779d.ctex::
 Tree2.png::CompressedTexture2D/CompressedTexture2D::2596742924151817614::1750885372::1750885415::1::::<><><>0<>0<>56c93c89dab317817a76fcbc825804c5<>res://.godot/imported/Tree2.png-9b966d3c00c7e788f32bd26a5f29ce11.ctex::
@@ -336,7 +336,7 @@ Rocks_01.png::CompressedTexture2D/CompressedTexture2D::7921548988603459386::1659
 Rocks_02.png::CompressedTexture2D/CompressedTexture2D::4369060723882504070::1659724161::1750885415::1::::<><><>0<>0<>e6ea3d56fd7f32d1039808c376f30a78<>res://.godot/imported/Rocks_02.png-d87c049faefddf5a767a9718e2f3aa11.ctex::
 Rocks_03.png::CompressedTexture2D/CompressedTexture2D::6226875441697273706::1659724172::1750885415::1::::<><><>0<>0<>6570e3baa2cc2af475dcd6023ec4936b<>res://.godot/imported/Rocks_03.png-156aacb38071777b76f0f4ef31e2d8c6.ctex::
 Rocks_04.png::CompressedTexture2D/CompressedTexture2D::1012254786804671123::1659724184::1750885415::1::::<><><>0<>0<>8f12595b797c9cf7a68e7f97b9759b21<>res://.godot/imported/Rocks_04.png-54d713e0417e742a0dd0c1caed9b64cd.ctex::
-::res://assets/UI/::1751305097
+::res://assets/UI/::1751306393
 1.jpg::CompressedTexture2D/CompressedTexture2D::8019959176153506222::1751305097::1751306393::1::::<><><>0<>0<>d04988bd200fd3ba5b4c4513ca7e4a71<>res://.godot/imported/1.jpg-131db231d61cff8b84e3ecb126102711.ctex::
 ::res://assets/UI/Banners/::1750885416
 Banner_Connection_Down.png::CompressedTexture2D/CompressedTexture2D::2558859481761022884::1671766120::1750885415::1::::<><><>0<>0<>0ad53ea36d45882ad5d4841315ad9556<>res://.godot/imported/Banner_Connection_Down.png-869527f81eb5660009d445e197431cbe.ctex::

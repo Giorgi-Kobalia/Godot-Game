@@ -14,18 +14,16 @@ func _physics_process(delta: float) -> void:
 		
 	aura_anim.visible = false
 
-	var direction_x := Input.get_axis("ui_left", "ui_right")
-	var direction_y := Input.get_axis("ui_up", "ui_down")
+	var direction := Vector2(
+		Input.get_axis("ui_left", "ui_right"),
+		Input.get_axis("ui_up", "ui_down")
+	)
 
-	if direction_x:
-		velocity.x = direction_x * SPEED
+	if direction != Vector2.ZERO:
+		velocity = direction.normalized() * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity = velocity.move_toward(Vector2.ZERO, SPEED)
 
-	if direction_y:
-		velocity.y = direction_y * SPEED
-	else:
-		velocity.y = move_toward(velocity.y, 0, SPEED)
 
 	if velocity.length() > 0:
 		monk.play("Run")
