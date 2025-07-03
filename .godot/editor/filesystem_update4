@@ -1,3 +1,4 @@
+res://npc.tscn
 res://game.tscn
-res://character_body_movements.gd
 res://ground.tscn
+res://enemy_body_2d.gd
